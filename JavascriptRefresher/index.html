@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //let keyword modern javascript keyword
+      //let keyword cant be redeclared again whereas var can be
+      let a = "this is js revision";
+      console.log(a);
+      //object
+      let obj = {
+        k: "v",
+        k1: "v1",
+        func: function myfunc(number) {
+          console.log("This is " + number);
+        },
+      };
+      console.log(obj.k);
+      obj.func(90);
+      document.addEventListener("click", function clicks() {
+        console.log("clicked");
+        let conf = confirm("Are you sure?");
+        // alert("You have clicked");
+        console.log(conf);
+      });
+      console.log(
+        "learning what this refers to in functions inside objects or normal functions"
+      );
+      console.log("Outside function");
+      console.log(this);
+      function normal(a) {
+        console.log("Normal Function");
+        console.log("number is" + a + this);
+      }
+      normal(45);
+      console.log("Inside object of function");
+      let obj1 = {
+        func: function objfunc() {
+          console.log(this);
+        },
+      };
+      obj1.func();
+      console.log("learning callback functions:- settimeout");
+      setTimeout(() => {
+        console.log("runningset timeout function");
+      }, 3000);
+    </script>
+  </head>
+  <body>
+    <h1>This is javascript division.</h1>
+  </body>
+</html>
