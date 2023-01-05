@@ -50,7 +50,7 @@ export default function Navbar(props) {
     </>
   );
 }
-//proptypes isliye set krdete hai jisse agar title ya about mei string ki agah number bhejnegey toh console meiwarning aajayegi.
+//proptypes isliye set krdete hai jisse agar title ya about mei string ki jagah number bhejnegey toh console meiwarning aajayegi.
 Navbar.propTypes = { title: PropTypes.string, about: PropTypes.string };
 //agar props ki value na pass kre toh defualt yeh values set hojaayengey
 Navbar.defaultProps={
