@@ -7,7 +7,7 @@ function App() {
     <>
       <Navbar title="My-appLearningProps" about="About using props" />
       <div className="container">
-        <Textform heading="Enter your text" />
+        <Textform heading="Enter your text below" />
         {/* <About /> */}
       </div>
     </>
