@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import React from "react";
+import Alert from "./components/Alert";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -11,10 +12,22 @@ function App() {
     if (mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "grey";
+      showAlert("Dark Mode has been enabled", "success");
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
+      showAlert("Dark Mode has been disabled", "success");
     }
+  };
+  const [alert, setAlert] = useState(null);
+  const showAlert = (message, type) => {
+    setAlert({
+      msg: message,
+      type: type,
+    });
+    setTimeout(() => {
+      setAlert(null);
+    }, 2000);
   };
   return (
     <>
@@ -24,8 +37,13 @@ function App() {
         mode={mode}
         toggleMode={toggleMode}
       />
+      <Alert alert={alert} />
       <div className="container">
-        <Textform heading="Enter your text below" mode={mode}/>
+        <Textform
+          heading="Enter your text below"
+          mode={mode}
+          showAlert={showAlert}
+        />
         {/* <About /> */}
       </div>
     </>

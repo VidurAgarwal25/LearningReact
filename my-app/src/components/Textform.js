@@ -6,9 +6,11 @@ export default function Textform(props) {
     console.log("functio uppercase clicked");
     var newtext = text.toUpperCase();
     setText(newtext);
+    props.showAlert("UPPERCASE Function Used", "success");
   };
   const handleLowerCaseClick = () => {
     setText(text.toLowerCase());
+    props.showAlert("LOWERCASE Function Used", "success");
   };
   const handleOnChange = (event) => {
     console.log("function handleonchange is called");
@@ -21,6 +23,7 @@ export default function Textform(props) {
     }
     var newtext = arr.join(" ");
     setText(newtext);
+    props.showAlert("Captitalizing First Word Function Used", "success");
   };
   return (
     <>
