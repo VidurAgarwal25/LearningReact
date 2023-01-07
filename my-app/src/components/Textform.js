@@ -7,6 +7,12 @@ export default function Textform(props) {
     var newtext = text.toUpperCase();
     setText(newtext);
     props.showAlert("UPPERCASE Function Used", "success");
+    setInterval(() => {
+      document.title = "Learning React";
+    }, 1500);
+    setInterval(() => {
+      document.title = "Changed Title";
+    }, 2000);
   };
   const handleLowerCaseClick = () => {
     setText(text.toLowerCase());

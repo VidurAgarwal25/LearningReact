@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <Navbar
-        title="My-appLearningProps"
+        title="LearningReact"
         about="About using props"
         mode={mode}
         toggleMode={toggleMode}
