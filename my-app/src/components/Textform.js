@@ -25,7 +25,9 @@ export default function Textform(props) {
   return (
     <>
       <div className="container">
-        <h1>{props.heading}</h1>
+        <h1 style={{ color: props.mode === "light" ? "black" : "white" }}>
+          {props.heading}
+        </h1>
         <div className="mb-3">
           <textarea
             className="form-control"
@@ -33,6 +35,10 @@ export default function Textform(props) {
             onChange={handleOnChange}
             id="myBox"
             rows="8"
+            style={{
+              color: props.mode === "light" ? "black" : "white",
+              background: props.mode === "light" ? "white" : "black",
+            }}
           ></textarea>
         </div>
         <button className="btn btn-primary mx-1" onClick={handleUpperCaseClick}>
@@ -48,7 +54,10 @@ export default function Textform(props) {
           Convert To Capitalized Case
         </button>
       </div>
-      <div className="container my-3">
+      <div
+        className="container my-3"
+        style={{ color: props.mode === "light" ? "black" : "white" }}
+      >
         <h1>Your text summary</h1>
         <p>
           {text.split(" ").length} words and {text.length} characters
