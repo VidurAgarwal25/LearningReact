@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -52,7 +52,7 @@ export default function Navbar(props) {
                 className="form-check-label"
                 htmlFor="flexSwitchCheckDefault"
               >
-                {`Enable ${props.mode==='light'?"Dark":"Light"}Mode`}
+                {`Enable ${props.mode === "light" ? "Dark" : "Light"}Mode`}
               </label>
             </div>
           </div>
