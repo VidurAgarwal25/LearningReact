@@ -50,14 +50,23 @@ export default function Textform(props) {
             }}
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-1" onClick={handleUpperCaseClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-1 my-1"
+          onClick={handleUpperCaseClick}
+        >
           CONVERT TO UPPERCASE
         </button>
-        <button className="btn btn-success mx-1" onClick={handleLowerCaseClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-success mx-1 my-1"
+          onClick={handleLowerCaseClick}
+        >
           convert to lowercase
         </button>
         <button
-          className="btn btn-success mx-1"
+          disabled={text.length === 0}
+          className="btn btn-success mx-1 my-1"
           onClick={handleCapitalizedCaseClick}
         >
           Convert To Capitalized Case
@@ -69,11 +78,21 @@ export default function Textform(props) {
       >
         <h1>Your text summary</h1>
         <p>
-          {text.split(" ").length} words and {text.length} characters
+          {
+            text.split(/\s+/).filter((element) => {
+              return element.length !== 0;
+            }).length
+          }
+          words and {text.length} characters
         </p>
         <h3>Average Reading time for this (125 words/minute):-</h3>
 
-        <p>{(1 / 125) * text.split(" ").length}</p>
+        <p>
+          {(1 / 125) *
+            text.split(" ").filter((element) => {
+              return element.length !== 0;
+            }).length}
+        </p>
         <h2>Preview</h2>
         <p>{text}</p>
       </div>
