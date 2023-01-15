@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "totalResults": 4,
+  "articles": [
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "Fox News",
+      "title": "Virginia county to stop prosecuting several crimes",
+      "description": "A Virginia prosecutor said in a letter that her office will not be involved in the prosecution of some misdemeanor crimes, deferring to law enforcement.",
+      "url": "https://www.foxnews.com/us/virginia-county-stop-prosecuting-several-crimes",
+      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2023/01/Untitled-design-393.png",
+      "publishedAt": "2023-01-15T13:22:22.8521088Z",
+      "content": "A Virginia prosecutor says that her office will stop its involvement in the prosecution of some misdemeanor cases. \r\nLoudoun County Commonwealths Attorney Buta Biberaj wrote in a memo that her office… [+3370 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Bethany Dawson",
+      "title": "Indiana University: Stabbing of female student was anti-Asian hate crime",
+      "description": "The 18-year-old student was stabbed in the head by a fellow bus passenger in Bloomington. An Indiana woman has been charged with attempted murder.",
+      "url": "https://www.insider.com/indiana-university-stabbing-of-female-student-was-anti-asian-hate-crime-2023-1",
+      "urlToImage": "https://i.insider.com/63c3e7e4b4171f001957efde?width=1200&format=jpeg",
+      "publishedAt": "2023-01-15T12:30:01Z",
+      "content": "An Indiana woman has been charged with the attempted murder and aggravated battery of a student from Indiana University, reports say.\r\nThe university has said the assault on the 18-year-old female wa… [+1724 chars]"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": null,
+      "title": "\"48 Hours\" schedule: Live, DVR, and on demand",
+      "description": "True crime. Social justice. Impact. To miss it would be a crime.",
+      "url": "https://www.cbsnews.com/48-hours/episode-schedule/",
+      "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2022/09/22/23f1bcdf-10e4-46e5-914c-8b0bfca1a801/thumbnail/1200x630/029a84c9bdee7c9364620d11e3c20150/48hrs-thumbprint.jpg",
+      "publishedAt": "2023-01-15T07:19:00+00:00",
+      "content": "\"48 Hours\" is the one to watch Saturday nights at 10/9c on CBS and streaming on Paramount+.\r\nCan't watch us live? Set your DVR!\r\nWatch more full episodes of \"48 Hours\" on Pluto TV.  \r\nYou'll also fin… [+54319 chars]"
+    },
+    {
+      "source": {
+        "id": "the-jerusalem-post",
+        "name": "The Jerusalem Post"
+      },
+      "author": null,
+      "title": "Congresswoman Nita Lowey: I am proud to stand with Israel",
+      "description": "Gantz: Security of Israel is above politics; PA: This is a crime.",
+      "url": "https://www.jpost.com/Arab-Israeli-Conflict/Gantz-Security-of-Israel-is-above-politics-Palestinians-This-is-a-crime-607595",
+      "urlToImage": "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Article2016_ControlFaceDetect/448812",
+      "publishedAt": "2019-11-13T04:41:00Z",
+      "content": "US Ambassador David M. Friedman said the US stands “with our friend and ally Israel at this critical moment” on social media on Tuesday after roughly 170 rockets were fired on Israel from the Gaza St… [+6160 chars]"
+    }
+  ]
+}
